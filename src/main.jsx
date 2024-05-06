@@ -15,6 +15,8 @@ import ErrorPage from './ErrorPage.jsx';
 import Navbar from './NavBar';
 import Contact from './Pages/Contact'
 import { IconContext } from 'react-icons';
+import About from './Pages/About.jsx';
+import Portfolio from './Pages/Portfolio.jsx';
 
 
 function Layout() {
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />
+      },
+      {
+        path: '/about',
+        element: <About />
+      },
+      {
+        path: '/portfolio',
+        element: <Portfolio />
       },
     ]
   }
