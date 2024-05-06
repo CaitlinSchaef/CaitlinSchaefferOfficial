@@ -1,10 +1,53 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+// the bootstrap import is apparently really important
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './Main.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+} from "react-router-dom";
+
+//Pages:
+import LandingPage from './LandingPage.jsx';
+import ErrorPage from './ErrorPage.jsx';
+import Navbar from './NavBar';
+import Contact from './Pages/Contact'
+import { IconContext } from 'react-icons';
+
+
+function Layout() {
+  return (
+    <div className="d-flex flex-column justify-content-between vh-100">
+      <Navbar />
+      <div id='page-content'>
+        <Outlet />
+      </div>
+    </ div>
+  )
+}
+
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        element: <LandingPage />,
+        errorElement: <ErrorPage />
+      },
+      {
+        path: '/contact',
+        element: <Contact />
+      },
+    ]
+  }
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

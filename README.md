@@ -47,6 +47,9 @@ In createRoot:
 ## Install bootstrap
 npm install react-bootstrap bootstrap
 
+## Make sure you add this to the main:
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 <!-- You still need to deploy -->
 
 ### deploy

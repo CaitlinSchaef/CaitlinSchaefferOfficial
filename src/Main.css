@@ -1,0 +1,51 @@
+html {
+  height: 100vh;
+  /* overflow: scroll; */
+}
+
+body {
+  background-image: url("../src/assets/EditBWfloralBG.jpeg"); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #18261b;
+  background-size: cover;
+    /* attachment is what let you wrap it to the screen properly */
+  background-attachment: fixed;
+  overflow: hidden;
+  font-family: "goudy-bookletter-1911", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #f6f4e6;
+ }
+
+ .display-1 {
+  font-size: 7rem;
+ }
+
+#root {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+#page-content {
+  flex-grow: 2;
+  max-height: 100%;
+}
+
+.aboutBody {
+  background-color: #18261b9c;
+  border-radius: 2%;
+  color: white;
+  /* border-style: solid;
+  border-color: white;
+  border-width: 3px; */
+  /* overflow: scroll;  */
+  flex-wrap: wrap;
+ }
+
+.iconReact {
+  /* size: 3rem; */
+  font-size: 3rem;
+  color: white;
+}
