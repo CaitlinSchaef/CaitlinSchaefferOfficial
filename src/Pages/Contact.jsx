@@ -39,7 +39,7 @@ const Body = () => {
                   </a>
                   <a
                   className="iconReact"
-                  href="www.linkedin.com/in/caitlin-schaeffer-125668153"
+                  href="https://www.linkedin.com/in/caitlin-schaeffer-125668153/"
                   >
                     <FaLinkedin />
                   </a>
