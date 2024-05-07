@@ -11,22 +11,81 @@ import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 
 //portfolio image imports
+import ToDo from '../assets/Portfolio/ToDoShot.png'
+import Menu from '../assets/Portfolio/FullScreenMenu.png'
+import Intermediate from '../assets/Portfolio/IntermediateReactPract.png'
+import TicTacToe from '../assets/Portfolio/TicTacToeMedDemo.png'
+import WeatherApp from '../assets/Portfolio/WeatherAppProject.png'
 
 const ChildA = () => {
     return (
         <a
         className="masonryImage"
-        href="https://github.com/CaitlinSchaef"
+        href="https://react-to-do-list-project-pied.vercel.app/"
         >
             <img
-                alt="Headshot"
-                src={Headshot}
-                className="text-center"
+                alt="ToDo List Project"
+                src={ToDo}
             />
         </a>
     )
     }
 
+const ChildB = () => {
+    return (
+        <a
+        className="masonryImage"
+        href="https://caitlinschaef.github.io/Random-Restaurant/"
+        >
+            <img
+                alt="Random Restaurant Project"
+                src={Menu}
+            />
+        </a>
+    )
+    }
+
+const ChildC = () => {
+    return (
+        <a
+        className="masonryImage"
+        href="https://intermediate-react-practice.vercel.app/"
+        >
+            <img
+                alt="Intermediate React Practice"
+                src={Intermediate}
+            />
+        </a>
+    )
+    }
+
+const ChildD = () => {
+    return (
+        <a
+        className="masonryImage"
+        href="https://caitlinschaef.github.io/tic-tac-toe/"
+        >
+            <img
+                alt="TicTacToe Project"
+                src={TicTacToe}
+            />
+        </a>
+    )
+    }
+
+const ChildE = () => {
+    return (
+        <a
+        className="masonryImage"
+        href="https://caitlinschaef.github.io/weather-app/"
+        >
+            <img
+                alt="Weather App Project"
+                src={WeatherApp}
+            />
+        </a>
+    )
+    }
 
 const Body = () => {
   return (
@@ -74,6 +133,7 @@ const Body = () => {
                     </span>
                         <p className="overflow-scroll" style={{height: "65vh"}}>
                             This is my portfolio
+                            
                         </p>
                 </Col>
             </Row>
