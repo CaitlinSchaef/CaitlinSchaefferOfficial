@@ -26,6 +26,8 @@ const ChildA = () => {
         href="https://react-to-do-list-project-pied.vercel.app/"
         >
             <img
+                width="250"
+                height="auto"
                 alt="ToDo List Project"
                 src={ToDo}
             />
@@ -40,6 +42,8 @@ const ChildB = () => {
         href="https://caitlinschaef.github.io/Random-Restaurant/"
         >
             <img
+                width="300"
+                height="auto"
                 alt="Random Restaurant Project"
                 src={Menu}
             />
@@ -54,6 +58,8 @@ const ChildC = () => {
         href="https://intermediate-react-practice.vercel.app/"
         >
             <img
+                width="250"
+                height="auto"
                 alt="Intermediate React Practice"
                 src={Intermediate}
             />
@@ -68,6 +74,8 @@ const ChildD = () => {
         href="https://caitlinschaef.github.io/tic-tac-toe/"
         >
             <img
+                width="300"
+                height="auto"
                 alt="TicTacToe Project"
                 src={TicTacToe}
             />
@@ -82,6 +90,8 @@ const ChildE = () => {
         href="https://caitlinschaef.github.io/weather-app/"
         >
             <img
+                width="250"
+                height="auto"
                 alt="Weather App Project"
                 src={WeatherApp}
             />
@@ -89,27 +99,23 @@ const ChildE = () => {
     )
     }
 
-const MyMasonry = () => {
-    return (
-        class MyWrapper extends React.Component {
-            render() {
-                return (
-                    <ResponsiveMasonry
-                        columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
-                    >
-                        <Masonry>
-                            <ChildA />
-                            <ChildB />
-                            <ChildC />
-                            <ChildD />
-                            <ChildE />
-                        </Masonry>
-                    </ResponsiveMasonry>
-                )
-            }
-        }
-    )
+function MyWrapper() {
+        return (
+            <ResponsiveMasonry
+                className="overflow-scroll" style={{height: "65vh"}}
+                columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+            >
+                <Masonry>
+                    <ChildA />
+                    <ChildB />
+                    <ChildE />
+                    <ChildC />
+                    <ChildD />
+                </Masonry>
+            </ResponsiveMasonry>
+        )
     }
+
 
 const Body = () => {
   return (
@@ -155,10 +161,8 @@ const Body = () => {
                         <FaPython />
                     </a>
                     </span>
-                        <p className="overflow-scroll" style={{height: "65vh"}}>
-                            <MyMasonry />
+                            {MyWrapper()}
                             
-                        </p>
                 </Col>
             </Row>
         </Container>
