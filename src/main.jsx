@@ -17,6 +17,7 @@ import Contact from './Pages/Contact'
 import { IconContext } from 'react-icons';
 import About from './Pages/About.jsx';
 import Portfolio from './Pages/Portfolio.jsx';
+import Blog from './Pages/Blog.jsx'
 
 
 function Layout() {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: '/portfolio',
         element: <Portfolio />
+      },
+      {
+        path: '/blog',
+        element: <Blog />
       },
     ]
   }

@@ -16,7 +16,7 @@ const Body = () => {
     breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs']}
     minBreakpoint="xs"
     >
-  {/* <div> */}
+    {/* <div> */}
       <Container className="">
         <Row className="justify-content-md-center">
           {/* Putting the class name for CSS on the column is what allows for customization of the text background
@@ -49,10 +49,10 @@ const Body = () => {
                   >
                     <MdOutlineEmail /> 
                   </a>
-          </Col>
-        </Row>
-      </Container>
-    {/* </div> */}
+            </Col>
+          </Row>
+        </Container>
+      {/* </div> */}
     </ThemeProvider>
   )
 }
