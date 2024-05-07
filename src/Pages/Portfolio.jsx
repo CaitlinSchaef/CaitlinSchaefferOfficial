@@ -9,6 +9,8 @@ import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import React from "react"
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 //portfolio image imports
 import ToDo from '../assets/Portfolio/ToDoShot.png'
@@ -87,6 +89,28 @@ const ChildE = () => {
     )
     }
 
+const MyMasonry = () => {
+    return (
+        class MyWrapper extends React.Component {
+            render() {
+                return (
+                    <ResponsiveMasonry
+                        columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
+                    >
+                        <Masonry>
+                            <ChildA />
+                            <ChildB />
+                            <ChildC />
+                            <ChildD />
+                            <ChildE />
+                        </Masonry>
+                    </ResponsiveMasonry>
+                )
+            }
+        }
+    )
+    }
+
 const Body = () => {
   return (
     <ThemeProvider
@@ -132,7 +156,7 @@ const Body = () => {
                     </a>
                     </span>
                         <p className="overflow-scroll" style={{height: "65vh"}}>
-                            This is my portfolio
+                            <MyMasonry />
                             
                         </p>
                 </Col>
