@@ -18,6 +18,13 @@ body {
   color: #f6f4e6;
  }
 
+.myButton {
+  margin: 3px;
+  background-color: grey;
+  color: #f6f4e6;
+  border-color: #f6f4e6;
+}
+
  .display-1 {
   font-size: 7rem;
  }
