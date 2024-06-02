@@ -24,6 +24,8 @@ import TicTacToe from '../assets/Portfolio/TicTacToeMedDemo.png'
 import WeatherApp from '../assets/Portfolio/WeatherAppProject.png'
 import BookCatalog from '../assets/Portfolio/bookCatalog.png'
 import CyclingStore from '../assets/Portfolio/CyclingStore.png'
+import CardGame from '../assets/Portfolio/CardGame.png'
+
 
 const ChildA = () => {
     return (
@@ -130,8 +132,24 @@ const ChildG = () => {
             <img
                 width="250"
                 height="auto"
-                alt="Book Catalog"
+                alt="Python Cycling Store"
                 src={CyclingStore}
+            />
+        </a>
+    )
+    }
+
+const ChildH = () => {
+    return (
+        <a
+        className="masonryImage"
+        href="https://github.com/CaitlinSchaef/card_game_python_project"
+        >
+            <img
+                width="250"
+                height="auto"
+                alt="Python Card Game"
+                src={CardGame}
             />
         </a>
     )
@@ -145,6 +163,7 @@ function MyWrapper() {
             >
                 <Masonry>
                     <ChildF />
+                    <ChildH />
                     <ChildA />
                     <ChildG />
                     <ChildB />
