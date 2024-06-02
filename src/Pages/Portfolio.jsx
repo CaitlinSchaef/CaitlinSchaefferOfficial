@@ -22,6 +22,8 @@ import Menu from '../assets/Portfolio/FullScreenMenu.png'
 import Intermediate from '../assets/Portfolio/IntermediateReactPract.png'
 import TicTacToe from '../assets/Portfolio/TicTacToeMedDemo.png'
 import WeatherApp from '../assets/Portfolio/WeatherAppProject.png'
+import BookCatalog from '../assets/Portfolio/bookCatalog.png'
+import CyclingStore from '../assets/Portfolio/CyclingStore.png'
 
 const ChildA = () => {
     return (
@@ -103,6 +105,38 @@ const ChildE = () => {
     )
     }
 
+const ChildF = () => {
+    return (
+        <a
+        className="masonryImage"
+        href="https://book-catalog-react.vercel.app/"
+        >
+            <img
+                width="250"
+                height="auto"
+                alt="Book Catalog"
+                src={BookCatalog}
+            />
+        </a>
+    )
+    }
+
+const ChildG = () => {
+    return (
+        <a
+        className="masonryImage"
+        href="https://github.com/CaitlinSchaef/Django_Cycling_Store"
+        >
+            <img
+                width="250"
+                height="auto"
+                alt="Book Catalog"
+                src={CyclingStore}
+            />
+        </a>
+    )
+    }
+
 function MyWrapper() {
         return (
             <ResponsiveMasonry
@@ -110,7 +144,9 @@ function MyWrapper() {
                 columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
             >
                 <Masonry>
+                    <ChildF />
                     <ChildA />
+                    <ChildG />
                     <ChildB />
                     <ChildE />
                     <ChildC />
