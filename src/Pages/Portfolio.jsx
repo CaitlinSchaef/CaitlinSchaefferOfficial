@@ -9,6 +9,10 @@ import { FaCss3Alt } from "react-icons/fa";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import { TbBrandDjango } from "react-icons/tb";
+import { SiSqlite } from "react-icons/si";
+import { TbBrandVercel } from "react-icons/tb";
+import { FaFly } from "react-icons/fa6";
 import React from "react"
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
@@ -159,6 +163,26 @@ const Body = () => {
                     className="iconReact"
                     >
                         <FaPython />
+                    </a>
+                    <a
+                    className="iconReact"
+                    >
+                        <SiSqlite />
+                    </a>
+                    <a
+                    className="iconReact"
+                    >
+                        <TbBrandDjango />
+                    </a>
+                    <a
+                    className="iconReact"
+                    >
+                        <TbBrandVercel />
+                    </a>
+                    <a
+                    className="iconReact"
+                    >
+                        <FaFly />
                     </a>
                     </span>
                             {MyWrapper()}
