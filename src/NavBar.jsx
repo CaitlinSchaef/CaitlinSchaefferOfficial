@@ -26,9 +26,9 @@ const MyNavbar = () => {
           <Link className="nav-link" to='/contact'>Contact</Link>
           </Navbar.Text>
 
-          <Navbar.Text className="nav-link me-2">
+          {/* <Navbar.Text className="nav-link me-2">
           <Link className="nav-link" to='/blog'>Blog</Link>
-          </Navbar.Text>
+          </Navbar.Text> */}
 
           <Navbar.Text className="nav-link me-2">
           <Link className="nav-link" to='/about'>About</Link>
