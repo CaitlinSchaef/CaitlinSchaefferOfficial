@@ -25,7 +25,7 @@ import WeatherApp from '../assets/Portfolio/WeatherAppProject.png'
 import BookCatalog from '../assets/Portfolio/bookCatalog.png'
 import CyclingStore from '../assets/Portfolio/CyclingStore.png'
 import CardGame from '../assets/Portfolio/CardGame.png'
-import SocialDjango from '../assets/Portfolio/UserPortalScreen.png'
+import SocialDjango from '../assets/Portfolio/UserPortalScreenShot.png'
 import GalPal from '../assets/Portfolio/GalPalLogo.png'
 
 const ChildA = () => {
