@@ -197,11 +197,11 @@ function MyWrapper() {
                 <Masonry>
                     <ChildJ />
                     <ChildI />
-                    <ChildF />
                     <ChildH />
                     <ChildA />
                     <ChildG />
                     <ChildB />
+                    <ChildF />
                     <ChildE />
                     <ChildC />
                     <ChildD />
