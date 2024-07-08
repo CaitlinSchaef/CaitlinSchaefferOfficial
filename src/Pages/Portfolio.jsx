@@ -176,7 +176,7 @@ const ChildJ = () => {
     return (
         <a
         className="masonryImage"
-        href="https://github.com/CaitlinSchaef/galpal_backend"
+        href="https://galpal.vercel.app/"
         >
             <img
                 width="250"

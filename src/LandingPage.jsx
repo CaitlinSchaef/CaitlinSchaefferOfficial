@@ -8,7 +8,7 @@ const Title = () => {
       <Row className="justify-content-md-center">
       <Col xs={12} md={8} className="d-flex flex-column justify-content-between mb-3 text-center">
         <h1 className="text-center display-1 mt-5">
-          <em>CAITLIN SCHAEFFER</em>
+          CAITLIN SCHAEFFER
         </h1>
         </Col>
       </Row>

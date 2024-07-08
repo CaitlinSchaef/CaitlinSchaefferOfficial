@@ -22,7 +22,7 @@ import Blog from './Pages/Blog.jsx'
 
 function Layout() {
   return (
-    <div className="d-flex flex-column justify-content-between vh-100">
+    <div className="d-flex flex-column justify-content-between vw-100 vh-100">
       <Navbar />
       <div id='page-content'>
         <Outlet />
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       },
     ]
   }
-]);
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

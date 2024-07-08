@@ -3,12 +3,27 @@ html {
   /* overflow: scroll; */
 }
 
+#root {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#page-content {
+  flex-grow: 2;
+  max-height: 100%;
+}
+
+
 body {
   background-image: url("../src/assets/EditBWfloralBG.jpeg"); 
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #18261b;
   background-size: cover;
+  height: 100%;
     /* attachment is what let you wrap it to the screen properly */
   background-attachment: fixed;
   overflow: hidden;
@@ -26,7 +41,7 @@ body {
 }
 
  .display-1 {
-  font-size: 4rem;
+  font-size: 3rem;
  }
 
 #root {
