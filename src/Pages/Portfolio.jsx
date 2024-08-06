@@ -27,6 +27,7 @@ import CyclingStore from '../assets/Portfolio/CyclingStore.png'
 import CardGame from '../assets/Portfolio/CardGame.png'
 import SocialDjango from '../assets/Portfolio/UserPortalScreenShot.png'
 import GalPal from '../assets/Portfolio/GalPalLogo.png'
+import StickerSmash from '../assets/Portfolio/StickerSmash.png'
 
 const ChildA = () => {
     return (
@@ -188,6 +189,23 @@ const ChildJ = () => {
     )
     }
 
+const ChildK = () => {
+    return (
+        <a
+        className="masonryImage"
+        href="https://github.com/CaitlinSchaef/StickerSmash"
+        >
+            <img
+                width="250"
+                height="auto"
+                alt="ToDo List Project"
+                src={StickerSmash}
+            />
+        </a>
+    )
+    }
+    
+
 function MyWrapper() {
         return (
             <ResponsiveMasonry
@@ -196,6 +214,7 @@ function MyWrapper() {
             >
                 <Masonry>
                     <ChildJ />
+                    <ChildK />
                     <ChildI />
                     <ChildH />
                     <ChildA />
