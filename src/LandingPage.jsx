@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom"
 import { Container, Row, Col } from "react-bootstrap"
 import './Main.css'
+import Logo from '../src/assets/graphicnobackground.png'
 
 const Title = () => {
   return (
     <Container className="">
       <Row className="justify-content-md-center">
       <Col xs={12} md={8} className="d-flex flex-column justify-content-between mb-3 text-center">
-        <h1 className="text-center display-1 mt-5">
-          CAITLIN SCHAEFFER
-        </h1>
+      <Link to='/About'>
+        <img
+                width="500"
+                height="auto"
+                alt="Logo"
+                src={Logo}
+            />
+            </Link>
         </Col>
       </Row>
     </Container>

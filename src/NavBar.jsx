@@ -14,6 +14,14 @@ const MyNavbar = () => {
   console.log("location:", location.pathname);
   const expand = "xs"; // Change this to the desired breakpoint
 
+  if(location.pathname === '/' ||
+    location.pathname === '/CreateUser' ||
+    location.pathname === '/Demo' ||
+    location.pathname === '/LogIn'
+  ) {
+    return null; // Doesn't show the header on these pages
+  } else {
+
   return (
     <>
       <Navbar key={expand} expand={expand} className="navbar mb-3" data-bs-theme="dark" >
@@ -57,6 +65,7 @@ const MyNavbar = () => {
       </Navbar>
     </>
   );
+}
 };
 
 export default MyNavbar;
