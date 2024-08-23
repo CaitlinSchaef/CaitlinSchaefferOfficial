@@ -4,12 +4,31 @@ import './Main.css'
 
 const Title = () => {
   return (
-    <Container className="">
+    <Container className="" style={{ paddingTop: '15vh' }}>
       <Row className="justify-content-md-center">
-      <Col xs={12} md={8} className="d-flex flex-column justify-content-between mb-3 text-center">
-        <h1 className="text-center display-1 mt-5">
-          CAITLIN SCHAEFFER
-        </h1>
+      <Col xs={12} md={8} className="d-flex flex-column justify-content-center text-center">
+        <Link to='/About'>
+            <h1 className="display-1">
+              CAITLIN <span>SCHAEFFER</span>
+            </h1>
+        </Link>
+        </Col>
+      </Row>
+      <Row className="link-row"> {/* Center the row */}
+        <Col className="link-col"> {/* Center each column */}
+          <Link to='/Portfolio'>
+            <h4>Portfolio</h4>
+          </Link>
+        </Col>
+        <Col className="link-col"> {/* Center each column */}
+          <Link to='/Contact'>
+            <h4>Contact</h4>
+          </Link>
+        </Col>
+        <Col className="link-col"> {/* Center each column */}
+          <Link to='/About'>
+            <h4>About</h4>
+          </Link>
         </Col>
       </Row>
     </Container>

@@ -71,3 +71,43 @@ body {
   font-size: 3rem;
   color: white;
 }
+
+
+h1.display-1 {
+  font-size: 4rem;
+  color: #f6f4e6; /* Ensures the text is white */
+}
+
+h1.display-1 span {
+  display: block; /* Ensures 'Schaeffer' drops to the next line on smaller screens */
+}
+
+@media (max-width: 768px) {
+  h1.display-1 {
+    font-size: 3rem;
+  }
+}
+
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Inherits the color from the parent (h1) */
+}
+
+.link-row {
+  justify-content: center; /* Center the links horizontally */
+  margin-top: 20px; /* Space above the links */
+}
+
+.link-col {
+  text-align: center; /* Center text within each column */
+}
+
+h4 {
+  font-size: 1.25rem; /* Adjust the font size for the links */
+  margin: 7px; /* Reduce space between the links */
+  color: #f6f4e6; /* Ensure the text color is consistent */
+}
+
+a:hover {
+  color: #18261b; /* Optional: Change color on hover */
+}
