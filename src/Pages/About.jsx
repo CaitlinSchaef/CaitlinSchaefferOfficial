@@ -20,9 +20,9 @@ const Body = () => {
       <Row className="justify-content-md-center">
         {/* Putting the class name for CSS on the column is what allows for customization of the text background
         had to make xs=12 so that it was full width on the smallest screen */}
-        <Col xs={12} md={8} className="d-flex flex-column justify-content-between mb-3 text-center aboutBody">
+        <Col xs={12} md={8} className="overflow-scroll d-flex flex-column justify-content-between mb-3 text-center aboutBody" style={{height: "75vh"}}>
               <h1><strong>Get to know me:</strong></h1>
-                <p className="overflow-scroll" style={{height: "75vh"}}>
+                <p className="">
                 If I needed to boil myself down to a few words, I would feel content with: <br></br>
                 traveler, thinker, reader, and gourmet. 
                 <br></br>

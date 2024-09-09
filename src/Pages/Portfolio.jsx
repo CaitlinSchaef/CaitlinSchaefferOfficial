@@ -13,6 +13,9 @@ import { TbBrandDjango } from "react-icons/tb";
 import { SiSqlite } from "react-icons/si";
 import { TbBrandVercel } from "react-icons/tb";
 import { FaFly } from "react-icons/fa6";
+import { SiPostgresql } from "react-icons/si";
+import { SiExpo } from "react-icons/si";
+import { TbBrandTypescript } from "react-icons/tb";
 import React from "react"
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
@@ -292,6 +295,21 @@ const Body = () => {
                     className="iconReact"
                     >
                         <FaFly />
+                    </a>
+                    <a
+                    className="iconReact"
+                    >
+                        <SiPostgresql />
+                    </a>
+                    <a
+                    className="iconReact"
+                    >
+                        <SiExpo />
+                    </a>
+                    <a
+                    className="iconReact"
+                    >
+                        <TbBrandTypescript />
                     </a>
                     </span>
                             {MyWrapper()}

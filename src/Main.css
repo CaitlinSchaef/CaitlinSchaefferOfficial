@@ -44,7 +44,7 @@ body {
   font-size: 3rem;
  }
 
-#root {
+/* #root {
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -53,7 +53,7 @@ body {
 #page-content {
   flex-grow: 2;
   max-height: 100%;
-}
+} */
 
 .aboutBody {
   background-color: #18261b9c;
@@ -63,7 +63,7 @@ body {
   border-color: white;
   border-width: 3px; */
   /* overflow: scroll;  */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
  }
 
 .iconReact {
